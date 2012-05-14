@@ -6,7 +6,7 @@ require 'sinatra/base'
 
 class SinatraApp < Sinatra::Base
   get '/' do
-    "I am `hostname`"
+    "I am #{`hostname`}"
   end
 end
 
